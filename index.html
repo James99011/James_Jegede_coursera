@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JayTech Web Solutions Flyer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .flyer-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .top-section {
+            background-image: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        }
+
+        .mastery-objectives {
+            background-color: white;
+            padding: 1.5rem;
+        }
+        
+        .contact-info {
+            background-color: #1a237e; /* A deep blue for the bottom section */
+            color: white;
+        }
+
+        /* Custom style to replicate the flyer's curved edge */
+        .bottom-curve {
+            position: relative;
+            background-color: white;
+            margin-top: -3rem;
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+            box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1), 0 -4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="p-4">
+
+<!-- Main flyer container -->
+<div class="flyer-container">
+    <!-- Top Section (with gradient background) -->
+    <div class="top-section p-8">
+        <div class="flex items-center justify-between mb-8">
+            <!-- JayTech Web Solutions Logo & Name -->
+            <div class="flex items-center space-x-4">
+                <img src="https://placehold.co/80x80/295F9C/ffffff?text=JTWS" alt="JayTech Web Solutions Logo" class="w-16 h-16 rounded-full shadow-lg">
+                <div>
+                    <h1 class="text-xl font-bold text-[#295F9C]">JAYTECH</h1>
+                    <p class="text-sm font-semibold text-[#295F9C]">WEB SOLUTIONS</p>
+                </div>
+            </div>
+            <!-- Placeholder for students image on the right -->
+            <div class="w-1/2">
+                <img src="https://placehold.co/400x500/2196F3/ffffff?text=Happy+Students" alt="Students learning" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+
+        <!-- Tech Training Section -->
+        <div class="flex flex-col items-start gap-4 mb-8">
+            <h2 class="text-5xl font-extrabold text-[#1a237e] tracking-tight">Tech Training</h2>
+            <div class="flex flex-wrap items-center gap-2 font-semibold text-white bg-blue-700 px-4 py-1 rounded-full">
+                Courses
+            </div>
+            <!-- Courses List -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4 text-sm font-medium text-gray-700">
+                <div class="bg-white px-3 py-1 rounded-full shadow-md">HTML</div>
+                <div class="bg-white px-3 py-1 rounded-full shadow-md">CSS</div>
+                <div class="bg-white px-3 py-1 rounded-full shadow-md">JavaScript</div>
+                <div class="bg-white px-3 py-1 rounded-full shadow-md">React</div>
+                <div class="bg-white px-3 py-1 rounded-full shadow-md">Bootstrap</div>
+                <div class="bg-white px-3 py-1 rounded-full shadow-md">Projects</div>
+                <div class="bg-white px-3 py-1 rounded-full shadow-md">Excel</div>
+                <div class="bg-white px-3 py-1 rounded-full shadow-md">Word</div>
+                <div class="bg-white px-3 py-1 rounded-full shadow-md">Powerpoint</div>
+            </div>
+        </div>
+        
+        <!-- Classes Availability text -->
+        <p class="text-lg text-gray-800 leading-relaxed max-w-sm">
+            Classes available both online & offline, tailored to your preference. Rest assured, you'll receive professional lectures.
+        </p>
+
+    </div>
+
+    <!-- Mastery Objectives Section (with a white background) -->
+    <div class="bottom-curve mastery-objectives -mt-12 mx-4 relative z-10 rounded-xl">
+        <h3 class="text-xl font-bold text-[#1a237e] mb-4">Mastery Objectives</h3>
+        <p class="text-gray-800 leading-relaxed">
+            Design and develop a responsive web application using HTML, CSS, JavaScript, React, and Bootstrap, demonstrating mastery of front-end development principles, component-based architecture, and adaptive layout techniques to create a visually appealing and user-friendly interface.
+        </p>
+        <ul class="list-none mt-4 text-sm text-gray-700">
+            <li>-A fully functional web application with a responsive design</li>
+            <li>-Well-structured and semantic HTML code</li>
+            <li>-Efficient and modular CSS code using Bootstrap</li>
+            <li>-Interactive and dynamic JavaScript code using React</li>
+        </ul>
+        <!-- Special Offer Box -->
+        <div class="absolute right-4 bottom-4 bg-red-600 text-white rounded-lg p-3 shadow-lg transform rotate-6 origin-bottom-right">
+            <p class="text-xs font-bold uppercase">Special Offer</p>
+            <p class="text-xs">Register Now & Get 2 Weeks Free Classes!</p>
+        </div>
+    </div>
+
+    <!-- Contact Info Section -->
+    <div class="contact-info p-8 mt-4 rounded-b-xl">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+            <!-- Contact Info -->
+            <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                <p class="text-gray-200">Contact us:</p>
+                <div class="flex items-center mt-2 space-x-2">
+                    <img src="https://placehold.co/40x40/4CAF50/ffffff?text=W" alt="WhatsApp Icon" class="w-8 h-8 rounded-full">
+                    <div class="text-lg font-bold">
+                        <p>09131948528</p>
+                        <p>09076956478</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scan Section -->
+            <div class="flex flex-col items-center">
+                <p class="text-gray-200">Scan</p>
+                <img src="https://placehold.co/100x100/ffffff/000000?text=QR+Code" alt="QR Code" class="mt-2 w-24 h-24 rounded-lg shadow-md">
+            </div>
+
+            <!-- Private Lessons Box -->
+            <div class="p-4 bg-gray-700 rounded-lg text-sm text-center">
+                <p>We also offer</p>
+                <p class="text-xl font-bold">Private/ Home Lessons</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
